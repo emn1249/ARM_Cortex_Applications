@@ -1,0 +1,40 @@
+
+**** Build of configuration Debug for project PWM_EXAMPLE1 ****
+
+"C:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="C:/ti/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PGE --define=TARGET_IS_BLIZZARD_RA1 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 31: warning #225-D: function "playSound" declared implicitly
+"../main.c", line 32: warning #225-D: function "playSound" declared implicitly
+"../main.c", line 33: warning #225-D: function "playSound" declared implicitly
+"../main.c", line 34: warning #225-D: function "playSound" declared implicitly
+"../main.c", line 35: warning #225-D: function "playSound" declared implicitly
+"../main.c", line 36: warning #225-D: function "playSound" declared implicitly
+"../main.c", line 37: warning #225-D: function "playSound" declared implicitly
+"../main.c", line 67: warning #112-D: statement is unreachable
+'Finished building: ../main.c'
+' '
+'Building file: ../tm4c123gh6pge_startup_ccs.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="C:/ti/TivaWare" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PGE --define=TARGET_IS_BLIZZARD_RA1 --diag_wrap=off --diag_warning=225 --display_error_number --preproc_with_compile --preproc_dependency="tm4c123gh6pge_startup_ccs.pp"  "../tm4c123gh6pge_startup_ccs.c"
+'Finished building: ../tm4c123gh6pge_startup_ccs.c'
+' '
+'Building target: PWM_EXAMPLE1.out'
+'Invoking: ARM Linker'
+"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PGE --define=TARGET_IS_BLIZZARD_RA1 --diag_wrap=off --diag_warning=225 --display_error_number -z -m"PWM_EXAMPLE1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --display_error_number --diag_wrap=off --warn_sections --xml_link_info="PWM_EXAMPLE1_linkInfo.xml" --rom_model -o "PWM_EXAMPLE1.out" "./main.obj" "./tm4c123gh6pge_startup_ccs.obj" "C:/ti/TivaWare/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pge.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined first referenced
+  symbol       in file     
+ --------- ----------------
+ playSound ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "PWM_EXAMPLE1.out" not built
+
+>> Compilation failure
+gmake: *** [PWM_EXAMPLE1.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
